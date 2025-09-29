@@ -3,8 +3,10 @@
 
 # Локальные зависимости
 go.sum
+go.mod
 vendor/
 
 # Логи и временные файлы
 *.log
 *.tmp
+prod-ca-2021.crt
