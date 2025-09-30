@@ -1,0 +1,24 @@
+type Query {
+	users: [User]
+	user(id: ID!): User
+	timeTravels: [TimeTravel]
+	timelines: [Timeline]
+	events: [Event]
+	travelLogs: [TravelLog]
+	timeMachines: [TimeMachine]
+}
+
+type Mutation {
+	createUser(input: UserInput!): User
+	updateUser(id: ID!, input: UserInput!): User
+	deleteUser(id: ID!): Boolean
+	// Добавьте остальные мутации
+}
+
+input UserInput {
+	firstName: String!
+	lastName: String!
+	email: String!
+	password: String!
+	role: String
+}
